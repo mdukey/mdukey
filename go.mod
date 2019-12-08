@@ -4,7 +4,7 @@ go 1.13
 
 require (
 	github.com/btcsuite/btcd v0.0.0-20190807005414-4063feeff79a // indirect
-	github.com/cosmos/cosmos-sdk v0.34.4-0.20191108144056-d81d46192a0c
+	github.com/cosmos/cosmos-sdk v0.0.0-20191208041458-08d2c99995c5
 	github.com/cosmos/go-bip39 v0.0.0-20180819234021-555e2067c45d // indirect
 	github.com/golang/mock v1.3.1 // indirect
 	github.com/onsi/ginkgo v1.8.0 // indirect
@@ -28,4 +28,4 @@ require (
 	google.golang.org/genproto v0.0.0-20190801165951-fa694d86fc64 // indirect
 )
 
-replace github.com/cosmos/cosmos-sdk => ../mdukey-sdk
+replace github.com/cosmos/cosmos-sdk v0.0.0-20191208041458-08d2c99995c5 => github.com/mdukey/mdukey-sdk v0.0.0-20191208041458-08d2c99995c5
