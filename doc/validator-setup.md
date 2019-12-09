@@ -1,7 +1,7 @@
 # Run a Validator on the mdukey Zone testnet
 
 ::: tip
-Information on how to join the testnet (`genesis.json` file and seeds) is held [in our  repo](https://github.com/mdukey). 
+Information on how to join the testnet (`genesis.json` file and seeds) is held [in our repo](https://github.com/mdukey/testnets). 
 :::
 
 Before setting up your validator node, make sure you've already gone through the [Full Node Setup](./join-testnet.md) guide.
@@ -40,15 +40,11 @@ When specifying commission parameters, the `commission-max-change-rate` is used 
 :::
 
 ::: tip
-`Min-self-delegation` is a stritly positive integer that represents the minimum amount of self-delegated voting power your validator must always have. A `min-self-delegation` of 1 means your validator will never have a self-delegation lower than `1mduduor `1000000umdumdu:
+`Min-self-delegation` is a stritly positive integer that represents the minimum amount of self-delegated voting power your validator must always have. A `min-self-delegation` of 1 means your validator will never have a self-delegation lower than `1mdu`, or 1000000umdu::
 
 You can confirm that you are in the validator set by using a third party explorer.
 
 ## Participate in Genesis as a Validator
-
-::: warning
-The genesis ceremony for the mdukey Zone testnet is closed. Please skip to the next section.
-:::
 
 If you want to participate in genesis as a validator, you need to justify that
 you have some mdu at genesis, create one (or multiple) transactions to bond this mdu to your validator address, and include this transaction in the genesis file.

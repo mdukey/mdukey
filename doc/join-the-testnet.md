@@ -50,10 +50,10 @@ Fetch the testnet's `genesis.json` file into `mdukeyd`'s config directory.
 
 ```bash
 mkdir -p $HOME/.mdukeyd/config
-curl https://raw.githubusercontent.com/mdukey/launch/master/genesis.json > $HOME/.mdukeyd/config/genesis.json
+curl https://raw.githubusercontent.com/mdukey/testnets/master/mdukey-13/genesis.json > $HOME/.mdukeyd/config/genesis.json
 ```
 
-Note we use the `latest` directory in the [launch repo](https://github.com/mdukey) which contains details for the testnet like the latest version and the genesis file. 
+Note we use the `latest` directory in the [testnets repo](https://github.com/mdukey/testnets) which contains details for the testnet like the latest version and the genesis file. 
 
 To verify the correctness of the configuration run:
 
@@ -63,9 +63,9 @@ mdukeyd start
 
 ### Add Seed Nodes
 
-Your node needs to know how to find peers. You'll need to add healthy seed nodes to `$HOME/.mdukeyd/config/config.toml`. The [`mdukey`](https://github.com/mdukey) repo contains links to some seed nodes.
+Your node needs to know how to find peers. You'll need to add healthy seed nodes to `$HOME/.mdukeyd/config/config.toml`. The [`mdukey`](https://github.com/mdukey/testnets) repo contains links to some seed nodes.
 
-If those seeds aren't working, you can find more seeds and persistent peers on a Mudkey Hub explorer (a list can be found on the [page](https://mdukey.network)). 
+If those seeds aren't working, you can find more seeds and persistent peers on a Mudkey explorer (a list can be found on the [page](https://mdukey.network)). 
 
 ## A Note on Gas and Fees
 
@@ -109,7 +109,7 @@ Check that everything is running smoothly:
 mdukeycli status
 ```
 
-View the status of the network with the [Mdukey Explorer](https://mdukey.network). 
+View the status of the network with the [Mdukey Explorer](https://scan.mdukey.org). 
 
 ## Export State
 
