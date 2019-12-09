@@ -50,7 +50,7 @@ Fetch the testnet's `genesis.json` file into `mdukeyd`'s config directory.
 
 ```bash
 mkdir -p $HOME/.mdukeyd/config
-curl https://raw.githubusercontent.com/mdukey/testnets/master/mdukey-13/genesis.json > $HOME/.mdukeyd/config/genesis.json
+curl https://raw.githubusercontent.com/mdukey/testnets/master/lastest/genesis.json > $HOME/.mdukeyd/config/genesis.json
 ```
 
 Note we use the `latest` directory in the [testnets repo](https://github.com/mdukey/testnets) which contains details for the testnet like the latest version and the genesis file. 
