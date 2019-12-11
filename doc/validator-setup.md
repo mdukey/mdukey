@@ -31,7 +31,8 @@ mdukeycli tx staking create-validator \
   --commission-max-change-rate="0.01" \
   --min-self-delegation="1" \
   --gas="auto" \
-  --gas-prices="0.025umdu\
+  --gas-adjustment="1.2" \
+  --gas-prices="0.0001umdu\
   --from=<key_name>
 ```
 
