@@ -92,4 +92,4 @@ To test any changes made in the SDK or Tendermint, a `replace` clause needs to b
 
 ## Next
 
-Now you can [the public testnet](./join-testnet.md) 
+Now you can join [the public testnet](./join-the-testnet.md) 
