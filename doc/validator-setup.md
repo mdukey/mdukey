@@ -32,7 +32,7 @@ mdukeycli tx staking create-validator \
   --min-self-delegation="1" \
   --gas="auto" \
   --gas-adjustment="1.2" \
-  --gas-prices="0.0001umdu\
+  --gas-prices="0.0001umdu"\
   --from=<key_name>
 ```
 
