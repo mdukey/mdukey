@@ -63,9 +63,9 @@ mdukeyd start
 
 ### Add Seed Nodes
 
-Your node needs to know how to find peers. You'll need to add healthy seed nodes to `$HOME/.mdukeyd/config/config.toml`. The [`mdukey`](https://github.com/mdukey/testnets) repo contains links to some seed nodes.
+Your node needs to know how to find peers. You'll need to add healthy seed nodes to `$HOME/.mdukeyd/config/config.toml`. The [`testnets repo`](https://github.com/mdukey/testnets) repo contains links to some seed nodes.
 
-If those seeds aren't working, you can find more seeds and persistent peers on a Mudkey explorer (a list can be found on the [page](https://mdukey.network)). 
+If those seeds aren't working, you can find more seeds and persistent peers on a Mudkey explorer (a list can be found on the [the-page-coming-soon](https://mdukey.network)). 
 
 ## A Note on Gas and Fees
 
