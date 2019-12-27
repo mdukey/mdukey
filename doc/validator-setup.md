@@ -139,8 +139,10 @@ mdukeycli tx slashing unjail \
 Your validator is active if the following command returns anything:
 
 ```bash
-mdukeycli query tendermint-validator-set | grep "$(mdukeyd tendermint show-validator)"
+mdukeycli query tendermint-validator-set --chain-id <chain-id> | grep "$(mdukeyd tendermint show-validator)"
 ```
+
+__NOTE__: `chain-id` should be specified, you can get it at `network` field by command `mdukeycli status`.
 
 You should now see your validator in one of the mdukey Zone explorers. You are looking for the `bech32` encoded `address` in the `~/.mdukeyd/config/priv_validator.json` file.
 
