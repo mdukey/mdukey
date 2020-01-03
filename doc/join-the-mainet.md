@@ -63,7 +63,7 @@ mdukeyd start
 
 Your node needs to know how to find peers. You'll need to add healthy seed nodes to `$HOME/.mdukeyd/config/config.toml`. 
 
-The [`launch `](https://github.com/mdukey/mainets) repo contains links to some seed nodes. 
+The [`launch `](https://github.com/mdukey/launch) repo contains links to some seed nodes. 
 
 If those seeds aren't working, you can find more seeds and persistent peers on a Mudkey explorer (a list can be found on the [page](https://mdukey.network)). 
 
