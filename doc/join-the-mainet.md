@@ -1,4 +1,4 @@
-# Join the testnet
+# Join the mainet
 
 ::: warning
 **You need to [install mdukey](./installation.md) before you go further**
@@ -46,14 +46,12 @@ Your full node has been initialized!
 
 ### Copy the Genesis File
 
-Fetch the testnet's `genesis.json` file into `mdukeyd`'s config directory.
+Fetch the mainet's `genesis.json` file into `mdukeyd`'s config directory.
 
 ```bash
 mkdir -p $HOME/.mdukeyd/config
-curl https://raw.githubusercontent.com/mdukey/testnets/master/lastest/genesis.json > $HOME/.mdukeyd/config/genesis.json
+curl https://raw.githubusercontent.com/mdukey/launch/master/genesis.json > $HOME/.mdukeyd/config/genesis.json
 ```
-
-Note we use the `latest` directory in the [testnets repo](https://github.com/mdukey/testnets) which contains details for the testnet like the latest version and the genesis file. 
 
 To verify the correctness of the configuration run:
 
@@ -63,14 +61,16 @@ mdukeyd start
 
 ### Add Seed Nodes
 
-Your node needs to know how to find peers. You'll need to add healthy seed nodes to `$HOME/.mdukeyd/config/config.toml`. The [`mdukey`](https://github.com/mdukey/testnets) repo contains links to some seed nodes.
+Your node needs to know how to find peers. You'll need to add healthy seed nodes to `$HOME/.mdukeyd/config/config.toml`. 
+
+The [`launch `](https://github.com/mdukey/mainets) repo contains links to some seed nodes. 
 
 If those seeds aren't working, you can find more seeds and persistent peers on a Mudkey explorer (a list can be found on the [page](https://mdukey.network)). 
 
 ## A Note on Gas and Fees
 
 ::: warning
-On Mudkey Hub testnet, the accepted denom is `umdu`, where `1mdu = 1.000.000umdu`
+On Mudkey Hub mainet, the accepted denom is `umdu`, where `1mdu = 1.000.000umdu`
 :::
 
 Transactions on the Mudkey Hub network need to include a transaction fee in order to be processed. This fee pays for the gas required to run the transaction. The formula is the following:
@@ -86,14 +86,14 @@ The `gasPrice` is the price of each unit of `gas`. Each validator sets a `min-ga
 The transaction `fees` are the product of `gas` and `gasPrice`. As a user, you have to input 2 out of 3. The higher the `gasPrice`/`fees`, the higher the chance that your transaction will get included in a block. 
 
 ::: tip
-For testnet, the recommended `gas-prices` is `0.001umdu`. 
+For mainet, the recommended `gas-prices` is `0.001umdu`. 
 ::: 
 
 ## Set `minimum-gas-prices`
 
 Your full-node keeps unconfirmed transactions in its mempool. In order to protect it from spam, it is better to set a `minimum-gas-prices` that the transaction must meet in order to be accepted in your node's mempool. This parameter can be set in the following file `~/.mdukeyd/config/mdukeyd.toml`.
 
-The initial recommended `min-gas-prices` is `0.001umdu but you might want to change it later. 
+The initial recommended `min-gas-prices` is `0.025umdu but you might want to change it later. 
 
 ## Run a Full Node
 
@@ -135,4 +135,4 @@ mdukeyd export --height [height] --for-zero-height > [filename].json
 
 ## Upgrade to Validator Node
 
-You now have an active full node. What's the next step? You can upgrade your full node to become a Mudkey Validator. The top 28 validators have the ability to propose new blocks to the Mudkey Zone. Continue onto [the Validator Setup](./validator-setup.md).
+You now have an active full node. What's the next step? You can upgrade your full node to become a Mudkey Validator. The top 100 validators have the ability to propose new blocks to the Mudkey Zone. Continue onto [the Validator Setup](./validator-setup.md).
