@@ -4,7 +4,7 @@
 Information on how to join the **mainet** (`genesis.json` file and seeds) is held [in our repo](https://github.com/mdukey/launch). 
 :::
 
-Before setting up your validator node, make sure you've already gone through the [Full Node Setup](./join-mainet.md) guide.
+Before setting up your validator node, make sure you've already gone through the [Full Mainet Node Setup](./join-the-mainet.md) guide.
 
 # Run a Validator on the mdukey Testnet Zone 
 
@@ -12,7 +12,7 @@ Before setting up your validator node, make sure you've already gone through the
 Information on how to join the **testnet** (`genesis.json` file and seeds) is held [in our repo](https://github.com/mdukey/testnets). 
 :::
 
-Before setting up your validator node, make sure you've already gone through the [Full Node Setup](./join-testnet.md) guide.
+Before setting up your validator node, make sure you've already gone through the [Full Testnet Node Setup](./join-the-testnet.md) guide.
 
 
 ## Create Your Validator
